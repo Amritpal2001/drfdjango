@@ -1,4 +1,4 @@
-# Electura assignment for TODO List and Notifications API in DRF(Django Rest Framework)
+# TODO List and Notifications API in DRF(Django Rest Framework)
 This is the assignment made during the assignment phase of Electura Internship
 
 ## Requirements
@@ -92,5 +92,6 @@ The API Route has two links
     "bio": "Customer1 Bio"
 }
 ```
-
+### The Moderator will get the email once the task is assigned by the customer
+### The Customer will get the email once the task is completed by the moderator
 
