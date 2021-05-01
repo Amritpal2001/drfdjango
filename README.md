@@ -22,7 +22,7 @@ The API Route has two links
 - password = '1234'
 * Once a user is logged in as a customer in the todo section, there is a complete list of tasks that customer has created and are pending to be completed by the assigned moderator.
 * Customer can also create new Tasks by sending a POST request to the URL http://drfdjango.pythonanywhere.com/todo/ once the user is logged in.
-* Customer can also change or delete the task by sending a PUT or DELETE request at http://drfdjango.pythonanywhere.com/todo/'id_of_the_post'
+* Customer can also change or delete the task by sending a PATCH or DELETE request at http://drfdjango.pythonanywhere.com/todo/'id_of_the_post'
 * Customer can also view the completed tasks through : http://drfdjango.pythonanywhere.com/completed/  along with the comments from moderators/
 * POST request Example JSON
 ```
@@ -40,7 +40,7 @@ The API Route has two links
 - password = '1234'
 * Once a user is logged in as a moderator in the todo section, there is a complete list of tasks that has been assigned to that particular moderator at http://drfdjango.pythonanywhere.com/todo/
 * Moderator can also mark the tasks as completed by sending a POST request to the URL http://drfdjango.pythonanywhere.com/completed/ once the user is logged in.
-* Moderator can also change or delete the comments given on a particular taks assigned by sending PUT or DELETE request at http://drfdjango.pythonanywhere.com/completed/'id_of_the_post'
+* Moderator can also change or delete the comments given on a particular tasks assigned by sending PATCH or DELETE request at http://drfdjango.pythonanywhere.com/completed/'id_of_the_post'
 * Moderator can also view the completed tasks by sending GET request at : http://drfdjango.pythonanywhere.com/completed/
 * POST request Example JSON
 ```
@@ -70,7 +70,7 @@ The API Route has two links
 * Send a GET request to : http://drfdjango.pythonanywhere.com/moderators/
 
 ## To update Moderator's Profile
-* Send PUT request to : http://drfdjango.pythonanywhere.com/updatemoderators/ after logging in as a moderator else it will give error
+* Send PATCH request to : http://drfdjango.pythonanywhere.com/updatemoderators/ after logging in as a moderator else it will give error
 * Example Code 
 ```
 {
@@ -82,7 +82,7 @@ The API Route has two links
 ```
 
 ## To update Customer's Profile
-* Send PUT request to : http://drfdjango.pythonanywhere.com/updatecustomer/ after logging in as a customer else it will give error
+* Send PATCH request to : http://drfdjango.pythonanywhere.com/updatecustomer/ after logging in as a customer else it will give error
 * Example Code 
 ```
 {
